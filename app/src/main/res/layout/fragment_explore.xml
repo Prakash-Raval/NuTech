@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".explore.ExploreFragment">
+
+        <View
+            android:id="@+id/viewCircle"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/bg_view"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btnSearch"
+            app:layout_constraintEnd_toEndOf="@id/btnSearch"
+            app:layout_constraintStart_toStartOf="@id/btnSearch"
+            app:layout_constraintTop_toTopOf="@id/btnSearch" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="20dp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_20sdp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_textview"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/filter_location"
+            android:textStyle="bold"
+            android:transitionName="textview"
+            app:layout_constraintStart_toEndOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/btnSearch" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtJobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/jobs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/txtFilter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

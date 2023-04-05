@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_20sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_50sdp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/glTop" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/publish_a_job"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/txtMore" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Give us feedback"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/txtPublish" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Rate us on google play"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/txtFeedback" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/share_nutech_with_a_friend"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/txtRate" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/txtShare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

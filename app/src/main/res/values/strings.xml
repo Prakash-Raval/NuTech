@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NuTech</string>
+    <string name="explore">Explore</string>
+    <string name="favorite">Favorite</string>
+    <string name="more">More</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="publish_a_job">Publish a job</string>
+    <string name="about">About</string>
+    <string name="share_nutech_with_a_friend">Share Nutech with a Friend</string>
+    <string name="saved_jobs">Saved Jobs</string>
+    <string name="filter_location">Filter Locations</string>
+    <string name="saved">Saved</string>
+    <string name="jobs">Jobs</string>
+</resources>
