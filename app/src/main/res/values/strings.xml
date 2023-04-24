@@ -12,4 +12,6 @@
     <string name="filter_location">Filter Locations</string>
     <string name="saved">Saved</string>
     <string name="jobs">Jobs</string>
+    <string name="rate_us_on_google_play">Rate us on google play</string>
+    <string name="give_us_feedback">Give us feedback</string>
 </resources>
